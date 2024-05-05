@@ -1,7 +1,7 @@
 
 # multirun
 
-[![Build](https://github.com/nicolas-van/multirun/actions/workflows/build.yml/badge.svg)](https://github.com/nicolas-van/multirun/actions/workflows/build.yml)
+[![Build](https://github.com/guoard/multirun/actions/workflows/build.yml/badge.svg)](https://github.com/guoard/multirun/actions/workflows/build.yml)
 
 A simple Unix utility in C to run multiple commands concurrently.
 
@@ -33,12 +33,12 @@ apk add multirun
 
 ### Binary install
 
-The [release page](https://github.com/nicolas-van/multirun/releases) lists all provided binaries.
+The [release page](https://github.com/guoard/multirun/releases) lists all provided binaries.
 
 Here is an example install script for an x86_64 Linux using GNU libc. Replace the URL with another one if you use another system.
 
 ```bash
-wget -c https://github.com/nicolas-van/multirun/releases/download/1.1.3/multirun-x86_64-linux-gnu-1.1.3.tar.gz -O - | tar -xz && \
+wget -c https://github.com/guoard/multirun/releases/download/v1.1.3/multirun-x86_64-linux-gnu-v1.1.3.tar.gz -O - | tar -xz && \
 mv multirun /bin
 ```
 
@@ -54,8 +54,8 @@ We provide binaries for the following systems:
 This project necessitates CMake.
 
 ```bash
-wget -c https://github.com/nicolas-van/multirun/archive/refs/tags/1.1.3.tar.gz -O - | tar -xz && \
-mv multirun-1.1.3 multirun-src && \
+wget -c https://github.com/guoard/multirun/archive/refs/tags/v1.1.3.tar.gz -O - | tar -xz && \
+mv multirun-v1.1.3 multirun-src && \
 cd multirun-src && \
 cmake -S . -B build && \
 cmake --build build && \
